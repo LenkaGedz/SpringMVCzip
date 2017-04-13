@@ -62,6 +62,7 @@ public class MyController {
             response.flushBuffer();
             is.close();
             os.close();
+            fileZip.delete();
         } catch (IOException ex) {
             throw new FileErrorException();
         }
